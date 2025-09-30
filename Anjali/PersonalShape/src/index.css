@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Universal Gradient */
+@layer utilities {
+  .bg-gradient-universal {
+    background: linear-gradient(to right, #7274d4, #9333EA, #d283e6);
+  }
+}
+
+/* Body default font */
+body {
+  @apply font-sans;
+}
+
+/* Custom components */
+.my-style {
+  @apply font-sans bg-gradient-universal text-white p-6 rounded-lg shadow-md;
+}
+
+.my-button {
+  @apply bg-gradient-universal text-white font-bold px-4 py-2 rounded hover:opacity-80 transition;
+}
+
+.my-card {
+  @apply bg-white text-black p-4 rounded shadow-lg;
+}
+
+/* Fade Up Animation */
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease forwards;
+}
+
+.animation-delay-100 { animation-delay: 0.1s; }
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-300 { animation-delay: 0.3s; }
+
+/* Slide In From Right Animation for mobile menu */
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.4s ease forwards;
+}
+
+/* Optional: Slide Out To Right */
+@keyframes slide-out-right {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-out-right {
+  animation: slide-out-right 0.4s ease forwards;
+}
