@@ -15,10 +15,11 @@ function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-10">
-          <NavbarLink href="/" label="Home" />
-          <NavbarLink href="/About" label="About" />
-          <NavbarLink href="/Portfolio" label="Portfolio" />
-          <NavbarLink href="/Contact" label="Contact" />
+          <NavbarLink to="/" label="Home" />
+          <NavbarLink to="/AboutMe" label="About" />
+
+          <NavbarLink to="/Portfolio" label="Portfolio" />
+          <NavbarLink to="/Contact" label="Contact" />
         </div>
 
         {/* Mobile Hamburger */}
@@ -38,7 +39,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden fixed left-0 right-0 top-14 bottom-0 z-40 bg-darkblue flex flex-col items-center justify-center space-y-8">
+        <div className="md:hidden fixed left-0 right-0 top-14 bottom-0 z-40 bg-mydarkblue flex flex-col items-center justify-center space-y-8">
           <NavbarLink href="/" label="Home" variant="mobile" />
           <NavbarLink
             href="/About"

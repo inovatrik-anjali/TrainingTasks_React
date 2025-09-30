@@ -74,7 +74,7 @@ export default function HeroSection() {
         >
           <a
             href="#portfolio"
-            className="px-8 py-3 bg-white/20 border border-white rounded-full text-white font-semibold shadow-lg hover:bg-white/30 transition"
+            className="px-8 py-3 bg-btnbg border border-white rounded-full text-white font-semibold shadow-lg hover:bg-btnbg transition"
           >
             Explore My Work
           </a>

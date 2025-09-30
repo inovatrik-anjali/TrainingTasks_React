@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function NavLink({ href, label, className = "" }) {
+function NavLink({ to, label, className = "" }) {
   return (
-    <a
-      href={href}
+    <Link
+      to={to}
       className={`px-0 py-2 font-bold transition hover:text-blue-400 hover:underline ${className}`}
       style={{ fontSize: "15.2px" }}
     >
       {label}
-    </a>
+    </Link>
   );
 }
 

@@ -10,13 +10,16 @@ module.exports = {
       },
 
        letterSpacing: {
-        tightest: "-0.5px", // custom spacing
+        tightest:"-0.5px", // custom spacing
       },
        colors: {
-        myblue: "#3B82F6",   // blue-500
-        mypurple: "#9333EA", // purple-600
-        mypink: "#EC4899",   // pink-400
-        darkblue: '#111a2e',  //darkblue
+        myblue: "#6b75db",   // blue-500
+        mypurple: "#800cecff", // purple-600
+        mypink: "#e76ba9ff",   // pink-400
+        mydarkblue: "#111a2e",  //darkblue
+        mygrey:"#f0f2fa",
+        myblue2:"#182e8aff",
+       btnbg: "#a47cc2",
       },
     },
   },
