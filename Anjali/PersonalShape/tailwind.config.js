@@ -20,6 +20,7 @@ module.exports = {
         mygrey:"#f0f2fa",
         myblue2:"#182e8aff",
        btnbg: "#a47cc2",
+       blue:"#4509a5ff"
       },
     },
   },
