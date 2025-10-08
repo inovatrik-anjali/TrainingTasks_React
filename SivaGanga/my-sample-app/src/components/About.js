@@ -2,16 +2,16 @@ import React from "react";
 
 export default function About() {
     return (
-        <section id="About" className="min-h-screen px-6 py-16 flex flex-col items-center">
+        <section id="About" className=" px-6 py-16 flex flex-col items-center">
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-purple-700 mb-12 text-center">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-purple-500 mb-12 text-center">
                 About Me
             </h2>
-            <div className="w-24 h-1 bg-purple-500 rounded-full mb-12"></div>
+            <div className="w-12 h-1 bg-purple-500 rounded-mb-12"></div>
 
 
 
-            <div className="max-w-8xl w-full mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div className="mt-12 max-w-8xl w-full mx-auto grid md:grid-cols-2 gap-12 items-center">
 
                 <div className="flex justify-center">
                     <img
@@ -22,8 +22,8 @@ export default function About() {
                 </div>
 
 
-                <div className="text-center md:text-left">
-                    <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6">
+                <div className="text-start md:text-left">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 ">
                         Passionate about creating meaningful digital experiences
                     </h3>
                     <p className="text-gray-700 mb-4 leading-relaxed">
@@ -41,11 +41,13 @@ export default function About() {
                         When I'm not designing, you'll find me exploring new technologies,
                         sketching ideas, or seeking inspiration in nature and architecture.
                     </p>
-                    <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-12">
-                        <button className="px-5 py-2 rounded-full border border-indigo-200 text-indigo-500 font-semibold hover:bg-indigo-500 transition hover:text-white transform transition hover:scale-110 ">
+
+                    <div className=" grid grid-cols-2 md:flex flex-wrap gap-4 justify-center md:justify-start mt-12">
+                        <button className="px-5 py-2 rounded-full border border-indigo-200 text-indigo-500 font-semibold hover:bg-indigo-500 transition
+                         hover:text-white transform transition hover:scale-110">
                             UI/UX Design
                         </button>
-                        <button className="px-5 py-2 rounded-full border border-indigo-200 text-indigo-500 font-semibold hover:bg-indigo-500 transition hover:text-white transform transition hover:scale-110">
+                        <button className="px-5 py-2 rounded-full border border-indigo-200 text-indigo-500 font-semibold hover:bg-indigo-500  hover:text-white hover:scale-110">
                             Web Development
                         </button>
                         <button className="px-5 py-2 rounded-full border border-indigo-200 text-indigo-500 font-semibold hover:bg-indigo-500 transition hover:text-white transform transition hover:scale-110">
